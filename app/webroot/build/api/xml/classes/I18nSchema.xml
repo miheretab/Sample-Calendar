@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="I18nSchema" namespace="" name="I18nSchema" abstract="false" final="false" start="28" end="61">
+  <file path="C:/wamp/www/calendar/app/Config/Schema" file="i18n.php" realpath="C:/wamp/www/calendar/app/Config/Schema/i18n.php" size="2084" time="2014-12-09T15:53:08+01:00" unixtime="1418136788" sha1="cdaba16d14b635c903f105f0d862a0192beaa248" relative="Config/Schema/i18n.php"/>
+  <docblock>
+    <description compact="Using the Schema command line utility">Use it to configure database for i18n
+
+cake schema run create i18n</description>
+  </docblock>
+  <extends full="CakeSchema" namespace="" name="CakeSchema"/>
+  <member name="name" type="string" default="'i18n'" visibility="public" line="30"/>
+  <method name="before" start="38" end="40" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Before callback."/>
+      <param description="Schema object properties" type="array" variable="$event"/>
+      <return description="Should process continue" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="event" byreference="false" type="array"/>
+  </method>
+  <method name="after" start="48" end="49" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="After callback."/>
+      <param description="Schema object properties" type="array" variable="$event"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="event" byreference="false" type="array"/>
+  </method>
+  <member name="i18n" type="array" visibility="public" line="51"/>
+</class>

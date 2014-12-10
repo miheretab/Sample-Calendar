@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="C:/wamp/www/calendar/app">
+  <namespace name="">
+    <class name="DATABASE_CONFIG" src="Config/database.php" description="Database configuration class." xml="classes/DATABASE_CONFIG.xml"/>
+    <class name="DbAclSchema" src="Config/Schema/db_acl.php" description="Using the Schema command line utility cake schema run create DbAcl" xml="classes/DbAclSchema.xml"/>
+    <class name="I18nSchema" src="Config/Schema/i18n.php" description="Using the Schema command line utility" xml="classes/I18nSchema.xml"/>
+    <class name="SessionsSchema" src="Config/Schema/sessions.php" xml="classes/SessionsSchema.xml"/>
+    <class name="AppShell" src="Console/Command/AppShell.php" description="Application Shell" xml="classes/AppShell.xml"/>
+    <class name="AppController" src="Controller/AppController.php" description="Application Controller" xml="classes/AppController.xml"/>
+    
+    
+    <class name="AppModel" src="Model/AppModel.php" description="Application model for Cake." xml="classes/AppModel.xml"/>
+    <class name="Event" src="Model/Event.php" description="Event Model" xml="classes/Event.xml"/>
+    
+    <class name="EventsControllerTest" src="Test/Case/Controller/EventsControllerTest.php" description="EventsController Test Case" xml="classes/EventsControllerTest.xml"/>
+    
+    
+    <class name="EventTest" src="Test/Case/Model/EventTest.php" description="Event Test Case" xml="classes/EventTest.xml"/>
+    
+    
+    <class name="EventFixture" src="Test/Fixture/EventFixture.php" description="EventFixture" xml="classes/EventFixture.xml"/>
+    
+    <class name="AppHelper" src="View/Helper/AppHelper.php" description="Application helper" xml="classes/AppHelper.xml"/>
+  <class name="EventsController" src="Controller/EventsController.php" description="Events Controller" xml="classes/EventsController.xml"/><class name="PagesController" src="Controller/PagesController.php" description="Static content controller" xml="classes/PagesController.xml"/></namespace>
+</index>

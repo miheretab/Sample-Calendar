@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Event" namespace="" name="Event" abstract="false" final="false" start="7" end="53">
+  <file path="C:/wamp/www/calendar/app/Model" file="Event.php" realpath="C:/wamp/www/calendar/app/Model/Event.php" size="1294" time="2014-12-09T17:13:24+01:00" unixtime="1418141604" sha1="f98924ac132bb379ac5f1bf9e45093577c8d87d2" relative="Model/Event.php"/>
+  <docblock>
+    <description compact="Event Model"/>
+  </docblock>
+  <extends full="AppModel" namespace="" name="AppModel"/>
+  <member name="displayField" type="string" default="'name'" visibility="public" line="14">
+    <docblock>
+      <description compact="Display field"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="validate" type="array" visibility="public" line="21">
+    <docblock>
+      <description compact="Validation rules"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <parent full="AppModel" namespace="" name="AppModel">
+    <extends full="Model" namespace="" name="Model"/>
+  </parent>
+<enrichments><enrichment type="build"><date unix="1418224432" date="10-12-2014" time="16:13:52" iso="2014-12-10T16:13:52+01:00" rfc="Wed, 10 Dec 2014 16:13:52 +0100"/><phpdox xmlns="http://xml.phpdox.net/src" version="" info="phpDox  - Copyright (C) 2010 - 2014 by Arne Blankerts" generated="Generated using phpDox  - Copyright (C) 2010 - 2014 by Arne Blankerts" phar="no"><enricher type="build"/><enricher type="git"/><enricher type="checkstyle"/><enricher type="pmd"/><enricher type="phploc"/><enricher type="phpunit"/></phpdox><php xmlns="http://xml.phpdox.net/src" version="5.5.12" os="WINNT"><zendextension name="Xdebug"/><extension name="Core"/><extension name="bcmath"/><extension name="calendar"/><extension name="ctype"/><extension name="date"/><extension name="ereg"/><extension name="filter"/><extension name="ftp"/><extension name="hash"/><extension name="iconv"/><extension name="json"/><extension name="mcrypt"/><extension name="SPL"/><extension name="odbc"/><extension name="pcre"/><extension name="Reflection"/><extension name="session"/><extension name="standard"/><extension name="mysqlnd"/><extension name="tokenizer"/><extension name="zip"/><extension name="zlib"/><extension name="libxml"/><extension name="dom"/><extension name="PDO"/><extension name="bz2"/><extension name="SimpleXML"/><extension name="wddx"/><extension name="xml"/><extension name="xmlreader"/><extension name="xmlwriter"/><extension name="openssl"/><extension name="curl"/><extension name="com_dotnet"/><extension name="fileinfo"/><extension name="gd"/><extension name="gettext"/><extension name="gmp"/><extension name="intl"/><extension name="imap"/><extension name="ldap"/><extension name="mbstring"/><extension name="exif"/><extension name="mysql"/><extension name="mysqli"/><extension name="Phar"/><extension name="pdo_mysql"/><extension name="pdo_sqlite"/><extension name="shmop"/><extension name="soap"/><extension name="sockets"/><extension name="sqlite3"/><extension name="xmlrpc"/><extension name="xsl"/><extension name="mhash"/><extension name="xdebug"/></php></enrichment></enrichments></class>

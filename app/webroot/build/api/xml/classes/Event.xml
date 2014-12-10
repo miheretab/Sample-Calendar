@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Event" namespace="" name="Event" abstract="false" final="false" start="7" end="53">
+  <file path="C:/wamp/www/calendar/app/Model" file="Event.php" realpath="C:/wamp/www/calendar/app/Model/Event.php" size="1294" time="2014-12-09T17:13:24+01:00" unixtime="1418141604" sha1="f98924ac132bb379ac5f1bf9e45093577c8d87d2" relative="Model/Event.php"/>
+  <docblock>
+    <description compact="Event Model"/>
+  </docblock>
+  <extends full="AppModel" namespace="" name="AppModel"/>
+  <member name="displayField" type="string" default="'name'" visibility="public" line="14">
+    <docblock>
+      <description compact="Display field"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="validate" type="array" visibility="public" line="21">
+    <docblock>
+      <description compact="Validation rules"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <parent full="AppModel" namespace="" name="AppModel">
+    <extends full="Model" namespace="" name="Model"/>
+  </parent>
+</class>

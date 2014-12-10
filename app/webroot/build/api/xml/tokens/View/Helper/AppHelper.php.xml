@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="C:/wamp/www/calendar/app/View/Helper" file="AppHelper.php" realpath="C:/wamp/www/calendar/app/View/Helper/AppHelper.php" size="1017" time="2014-12-09T15:53:10+01:00" unixtime="1418136790" sha1="4a5ffc3b8298f8d7fde7c3a7a452907cf954d815" relative="View/Helper/AppHelper.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="3">
+    <token name="T_DOC_COMMENT"> * Application level View Helper</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * This file is application-wide helper file. You can put all</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * application-wide helper-related methods here.</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * Licensed under The MIT License</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> * For full copyright and license information, please see the LICENSE.txt</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> * Redistributions of files must retain the above copyright notice.</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> * @link          http://cakephp.org CakePHP(tm) Project</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> * @package       app.View.Helper</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> * @since         CakePHP(tm) v 0.2.9</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> * @license       http://www.opensource.org/licenses/mit-license.php MIT License</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="21"/>
+  <line no="22">
+    <token name="T_STRING">App</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">uses</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Helper'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'View'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="23"/>
+  <line no="24">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> * Application helper</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT"> * Add your application-wide methods in the class below, your helpers</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT"> * will inherit them.</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT"> * @package       app.View.Helper</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="32">
+    <token name="T_CLASS">class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">AppHelper</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXTENDS">extends</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Helper</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="33">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="34"/>
+</source>

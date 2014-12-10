@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="EventFixture" namespace="" name="EventFixture" abstract="false" final="false" start="6" end="42">
+  <file path="C:/wamp/www/calendar/app/Test/Fixture" file="EventFixture.php" realpath="C:/wamp/www/calendar/app/Test/Fixture/EventFixture.php" size="1685" time="2014-12-09T17:12:25+01:00" unixtime="1418141545" sha1="48459eafe719bc97534f5c4b3aee1b83e40f7278" relative="Test/Fixture/EventFixture.php"/>
+  <docblock>
+    <description compact="EventFixture"/>
+  </docblock>
+  <extends full="CakeTestFixture" namespace="" name="CakeTestFixture"/>
+  <member name="fields" type="array" visibility="public" line="13">
+    <docblock>
+      <description compact="Fields"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="records" type="array" visibility="public" line="31">
+    <docblock>
+      <description compact="Records"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+</class>

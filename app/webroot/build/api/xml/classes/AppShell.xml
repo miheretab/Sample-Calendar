@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="AppShell" namespace="" name="AppShell" abstract="false" final="false" start="28" end="30">
+  <file path="C:/wamp/www/calendar/app/Console/Command" file="AppShell.php" realpath="C:/wamp/www/calendar/app/Console/Command/AppShell.php" size="854" time="2014-12-09T15:53:09+01:00" unixtime="1418136789" sha1="b443d50fa6d4323e11693b4a889281de808df100" relative="Console/Command/AppShell.php"/>
+  <docblock>
+    <description compact="Application Shell">Add your application-wide methods in the class below, your shells
+will inherit them.</description>
+    <package value="app.Console.Command"/>
+  </docblock>
+  <extends full="Shell" namespace="" name="Shell"/>
+</class>

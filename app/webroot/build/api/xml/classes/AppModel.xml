@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="AppModel" namespace="" name="AppModel" abstract="false" final="false" start="32" end="33">
+  <file path="C:/wamp/www/calendar/app/Model" file="AppModel.php" realpath="C:/wamp/www/calendar/app/Model/AppModel.php" size="1010" time="2014-12-09T15:53:10+01:00" unixtime="1418136790" sha1="0d811c303a264fc9a36a1a85b9a826b5d3fd1dfd" relative="Model/AppModel.php"/>
+  <docblock>
+    <description compact="Application model for Cake.">Add your application-wide methods in the class below, your models
+will inherit them.</description>
+    <package value="app.Model"/>
+  </docblock>
+  <extends full="Model" namespace="" name="Model"/>
+  <extenders>
+    <extender full="Event" namespace="" name="Event"/>
+  </extenders>
+</class>

@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="C:/wamp/www/calendar/app/Controller" file="PagesController.php" realpath="C:/wamp/www/calendar/app/Controller/PagesController.php" size="628" time="2014-12-10T16:13:23+01:00" unixtime="1418224403" sha1="f82b7e11de40d7c0e59921a7c5d5e425a300e90e" relative="Controller/PagesController.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_STRING">App</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">uses</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'AppController'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Controller'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * Static content controller</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * Override this controller by placing a copy in controllers directory of an application</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> * @package       app.Controller</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * @link http://book.cakephp.org/2.0/en/controllers/pages-controller.html</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="13">
+    <token name="T_CLASS">class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">PagesController</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXTENDS">extends</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">AppController</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> * This controller does not use a model</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> * @var array</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="20">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$uses</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="21"/>
+  <line no="22">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> * Dispays calendar with events marked</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> * when hover, it shows list of event names</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> * and when clicked it'll go to list of event page on the selected date</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT"> * </token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="28">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">home</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="29">
+    <token name="T_WHITESPACE">		</token>
+  </line>
+  <line no="30">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="31">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="32"/>
+<enrichments xmlns="http://xml.phpdox.net/src"><enrichment type="build"><date unix="1418224432" date="10-12-2014" time="16:13:52" iso="2014-12-10T16:13:52+01:00" rfc="Wed, 10 Dec 2014 16:13:52 +0100"/><phpdox xmlns="http://xml.phpdox.net/src" version="" info="phpDox  - Copyright (C) 2010 - 2014 by Arne Blankerts" generated="Generated using phpDox  - Copyright (C) 2010 - 2014 by Arne Blankerts" phar="no"><enricher type="build"/><enricher type="git"/><enricher type="checkstyle"/><enricher type="pmd"/><enricher type="phploc"/><enricher type="phpunit"/></phpdox><php xmlns="http://xml.phpdox.net/src" version="5.5.12" os="WINNT"><zendextension name="Xdebug"/><extension name="Core"/><extension name="bcmath"/><extension name="calendar"/><extension name="ctype"/><extension name="date"/><extension name="ereg"/><extension name="filter"/><extension name="ftp"/><extension name="hash"/><extension name="iconv"/><extension name="json"/><extension name="mcrypt"/><extension name="SPL"/><extension name="odbc"/><extension name="pcre"/><extension name="Reflection"/><extension name="session"/><extension name="standard"/><extension name="mysqlnd"/><extension name="tokenizer"/><extension name="zip"/><extension name="zlib"/><extension name="libxml"/><extension name="dom"/><extension name="PDO"/><extension name="bz2"/><extension name="SimpleXML"/><extension name="wddx"/><extension name="xml"/><extension name="xmlreader"/><extension name="xmlwriter"/><extension name="openssl"/><extension name="curl"/><extension name="com_dotnet"/><extension name="fileinfo"/><extension name="gd"/><extension name="gettext"/><extension name="gmp"/><extension name="intl"/><extension name="imap"/><extension name="ldap"/><extension name="mbstring"/><extension name="exif"/><extension name="mysql"/><extension name="mysqli"/><extension name="Phar"/><extension name="pdo_mysql"/><extension name="pdo_sqlite"/><extension name="shmop"/><extension name="soap"/><extension name="sockets"/><extension name="sqlite3"/><extension name="xmlrpc"/><extension name="xsl"/><extension name="mhash"/><extension name="xdebug"/></php></enrichment></enrichments></source>

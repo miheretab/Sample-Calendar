@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="C:/wamp/www/calendar/app/Config" file="database.php" realpath="C:/wamp/www/calendar/app/Config/database.php" size="3038" time="2014-12-09T16:59:45+01:00" unixtime="1418140785" sha1="d53639f5da3d4c40994893a5aaafd30dda191bf5" relative="Config/database.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="3">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * Licensed under The MIT License</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * For full copyright and license information, please see the LICENSE.txt</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> * Redistributions of files must retain the above copyright notice.</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> * @link          http://cakephp.org CakePHP(tm) Project</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> * @package       app.Config</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> * @since         CakePHP(tm) v 0.2.9</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> * @license       http://www.opensource.org/licenses/mit-license.php MIT License</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT"> * Database configuration class.</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> * You can specify multiple configurations for production, development and testing.</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> * datasource =&gt; The name of a supported datasource; valid options are as follows:</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> *  Database/Mysql - MySQL 4 &amp; 5,</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT"> *  Database/Sqlite - SQLite (PHP5 only),</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT"> *  Database/Postgres - PostgreSQL 7 and higher,</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT"> *  Database/Sqlserver - Microsoft SQL Server 2005 and higher</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT"> * You can add custom database datasources (or override existing datasources) by adding the</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT"> * appropriate file to app/Model/Datasource/Database. Datasources should be named 'MyDatasource.php',</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT"> * persistent =&gt; true / false</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT"> * Determines whether or not the database should use a persistent connection</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT"> * host =&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT"> * the host you connect to the database. To add a socket or port number, use 'port' =&gt; #</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT"> * prefix =&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT"> * Uses the given prefix for all the tables in this database. This setting can be overridden</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT"> * on a per-table basis with the Model::$tablePrefix property.</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="44">
+    <token name="T_DOC_COMMENT"> * schema =&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT"> * For Postgres/Sqlserver specifies which schema you would like to use the tables in.</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT"> * Postgres defaults to 'public'. For Sqlserver, it defaults to empty and use</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT"> * the connected user's default schema (typically 'dbo').</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT"> * encoding =&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_DOC_COMMENT"> * For MySQL, Postgres specifies the character encoding to use when connecting to the</token>
+  </line>
+  <line no="51">
+    <token name="T_DOC_COMMENT"> * database. Uses database default not specified.</token>
+  </line>
+  <line no="52">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="53">
+    <token name="T_DOC_COMMENT"> * unix_socket =&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_DOC_COMMENT"> * For MySQL to connect via socket specify the `unix_socket` parameter instead of `host` and `port`</token>
+  </line>
+  <line no="55">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="56">
+    <token name="T_DOC_COMMENT"> * settings =&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_DOC_COMMENT"> * Array of key/value pairs, on connection it executes SET statements for each pair</token>
+  </line>
+  <line no="58">
+    <token name="T_DOC_COMMENT"> * For MySQL : http://dev.mysql.com/doc/refman/5.6/en/set-statement.html</token>
+  </line>
+  <line no="59">
+    <token name="T_DOC_COMMENT"> * For Postgres : http://www.postgresql.org/docs/9.2/static/sql-set.html</token>
+  </line>
+  <line no="60">
+    <token name="T_DOC_COMMENT"> * For Sql Server : http://msdn.microsoft.com/en-us/library/ms190356.aspx</token>
+  </line>
+  <line no="61">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="62">
+    <token name="T_DOC_COMMENT"> * flags =&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_DOC_COMMENT"> * A key/value array of driver specific connection options.</token>
+  </line>
+  <line no="64">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="65">
+    <token name="T_CLASS">class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">DATABASE_CONFIG</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="66"/>
+  <line no="67">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$default</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="68">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'datasource'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Database/Mysql'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="69">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'persistent'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="70">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'host'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'localhost'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="71">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'login'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'root'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="72">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'password'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="73">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'database'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'calendar'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="74">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'prefix'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="75">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_COMMENT">//'encoding' =&gt; 'utf8',</token>
+  </line>
+  <line no="76">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="77"/>
+  <line no="78">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$test</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="79">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'datasource'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Database/Mysql'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="80">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'persistent'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="81">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'host'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'localhost'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="82">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'login'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'user'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="83">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'password'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'password'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="84">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'database'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'test_database_name'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="85">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'prefix'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="86">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_COMMENT">//'encoding' =&gt; 'utf8',</token>
+  </line>
+  <line no="87">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="88">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="89"/>
+<enrichments xmlns="http://xml.phpdox.net/src"><enrichment type="build"><date unix="1418224432" date="10-12-2014" time="16:13:52" iso="2014-12-10T16:13:52+01:00" rfc="Wed, 10 Dec 2014 16:13:52 +0100"/><phpdox xmlns="http://xml.phpdox.net/src" version="" info="phpDox  - Copyright (C) 2010 - 2014 by Arne Blankerts" generated="Generated using phpDox  - Copyright (C) 2010 - 2014 by Arne Blankerts" phar="no"><enricher type="build"/><enricher type="git"/><enricher type="checkstyle"/><enricher type="pmd"/><enricher type="phploc"/><enricher type="phpunit"/></phpdox><php xmlns="http://xml.phpdox.net/src" version="5.5.12" os="WINNT"><zendextension name="Xdebug"/><extension name="Core"/><extension name="bcmath"/><extension name="calendar"/><extension name="ctype"/><extension name="date"/><extension name="ereg"/><extension name="filter"/><extension name="ftp"/><extension name="hash"/><extension name="iconv"/><extension name="json"/><extension name="mcrypt"/><extension name="SPL"/><extension name="odbc"/><extension name="pcre"/><extension name="Reflection"/><extension name="session"/><extension name="standard"/><extension name="mysqlnd"/><extension name="tokenizer"/><extension name="zip"/><extension name="zlib"/><extension name="libxml"/><extension name="dom"/><extension name="PDO"/><extension name="bz2"/><extension name="SimpleXML"/><extension name="wddx"/><extension name="xml"/><extension name="xmlreader"/><extension name="xmlwriter"/><extension name="openssl"/><extension name="curl"/><extension name="com_dotnet"/><extension name="fileinfo"/><extension name="gd"/><extension name="gettext"/><extension name="gmp"/><extension name="intl"/><extension name="imap"/><extension name="ldap"/><extension name="mbstring"/><extension name="exif"/><extension name="mysql"/><extension name="mysqli"/><extension name="Phar"/><extension name="pdo_mysql"/><extension name="pdo_sqlite"/><extension name="shmop"/><extension name="soap"/><extension name="sockets"/><extension name="sqlite3"/><extension name="xmlrpc"/><extension name="xsl"/><extension name="mhash"/><extension name="xdebug"/></php></enrichment></enrichments></source>

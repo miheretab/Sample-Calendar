@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="DbAclSchema" namespace="" name="DbAclSchema" abstract="false" final="false" start="26" end="102">
+  <file path="C:/wamp/www/calendar/app/Config/Schema" file="db_acl.php" realpath="C:/wamp/www/calendar/app/Config/Schema/db_acl.php" size="3991" time="2014-12-09T15:53:08+01:00" unixtime="1418136788" sha1="177a25e88db6f85ebd72b3b5092285bbbd2b4257" relative="Config/Schema/db_acl.php"/>
+  <docblock>
+    <description compact="Using the Schema command line utility cake schema run create DbAcl"/>
+  </docblock>
+  <extends full="CakeSchema" namespace="" name="CakeSchema"/>
+  <method name="before" start="34" end="36" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Before event."/>
+      <param description="The event data." type="array" variable="$event"/>
+      <return description="Success" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="event" byreference="false" type="array"/>
+  </method>
+  <method name="after" start="44" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="After event."/>
+      <param description="The event data." type="array" variable="$event"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="event" byreference="false" type="array"/>
+  </method>
+  <member name="acos" type="array" visibility="public" line="50">
+    <docblock>
+      <description compact="ACO - Access Control Object - Something that is wanted"/>
+    </docblock>
+  </member>
+  <member name="aros" type="array" visibility="public" line="68">
+    <docblock>
+      <description compact="ARO - Access Request Object - Something that wants something"/>
+    </docblock>
+  </member>
+  <member name="aros_acos" type="array" visibility="public" line="87">
+    <docblock>
+      <description compact="Used by the Cake::Model:Permission class.">Checks if the given $aro has access to action $action in $aco.</description>
+    </docblock>
+  </member>
+</class>

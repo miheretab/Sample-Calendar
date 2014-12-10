@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="AppHelper" namespace="" name="AppHelper" abstract="false" final="false" start="32" end="33">
+  <file path="C:/wamp/www/calendar/app/View/Helper" file="AppHelper.php" realpath="C:/wamp/www/calendar/app/View/Helper/AppHelper.php" size="1017" time="2014-12-09T15:53:10+01:00" unixtime="1418136790" sha1="4a5ffc3b8298f8d7fde7c3a7a452907cf954d815" relative="View/Helper/AppHelper.php"/>
+  <docblock>
+    <description compact="Application helper">Add your application-wide methods in the class below, your helpers
+will inherit them.</description>
+    <package value="app.View.Helper"/>
+  </docblock>
+  <extends full="Helper" namespace="" name="Helper"/>
+</class>

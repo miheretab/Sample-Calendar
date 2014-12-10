@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="EventsControllerTest" namespace="" name="EventsControllerTest" abstract="false" final="false" start="8" end="59">
+  <file path="C:/wamp/www/calendar/app/Test/Case/Controller" file="EventsControllerTest.php" realpath="C:/wamp/www/calendar/app/Test/Case/Controller/EventsControllerTest.php" size="698" time="2014-12-09T17:15:06+01:00" unixtime="1418141706" sha1="8304538125d0a75552c29aff2afdad0fc74b5505" relative="Test/Case/Controller/EventsControllerTest.php"/>
+  <docblock>
+    <description compact="EventsController Test Case"/>
+  </docblock>
+  <extends full="ControllerTestCase" namespace="" name="ControllerTestCase"/>
+  <member name="fixtures" type="array" visibility="public" line="15">
+    <docblock>
+      <description compact="Fixtures"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <method name="testIndex" start="24" end="25" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="testIndex method"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="testView" start="32" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="testView method"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="testAdd" start="40" end="41" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="testAdd method"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="testEdit" start="48" end="49" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="testEdit method"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="testDelete" start="56" end="57" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="testDelete method"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+  </method>
+</class>

@@ -1,0 +1,58 @@
+#calendar tr td.day:hover {
+  background: #eeeeee;
+  cursor: pointer;
+}
+#calendar table tr td.old,
+#calendar table tr td.new {
+  color: #999999;
+}
+#calendar table {
+	width: auto;
+}
+#calendar th {
+	width: 100px;
+}
+#calendar table tr th.prev {
+	text-align: right;
+}
+#calendar #month {
+	text-align: center;
+}
+#calendar .day, #calendar .week {
+	text-align: center;
+}
+#calendar td.day.active {
+	background-color: #56BE7B;
+}
+#calendar td.day.active:hover {
+	background-color: #047428;
+}
+#calendar td.day.event {
+	background-color: #3A8ED5
+}
+#calendar td.day.event:hover {
+	background-color: #136BB5;
+}
+#calendar .day::before {
+    content: attr(data-tip) ;   
+     
+    font-size: 12px;
+    position:absolute;
+    z-index: 999;
+    white-space:pre-wrap;
+    background:#227CC7;
+    color:#fff;
+    padding:0px 7px;
+    line-height: 24px;
+    height: auto;     
+    opacity: 0; 
+	margin-left: 3%;
+	text-align: left;
+}
+     
+#calendar .day:hover::before {
+    opacity: 1;
+}
+#events tr.secondrow td {
+	border-bottom-width: 5px;
+}

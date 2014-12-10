@@ -1,0 +1,1411 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="C:/wamp/www/calendar/app/Config" file="core.php" realpath="C:/wamp/www/calendar/app/Config/core.php" size="14467" time="2014-12-09T16:59:39+01:00" unixtime="1418140779" sha1="6a4aa1be05514287578840f0fdce52d87d88be96" relative="Config/core.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="3">
+    <token name="T_DOC_COMMENT"> * This is core configuration file.</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * Use it to configure core behavior of Cake.</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> * Licensed under The MIT License</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * For full copyright and license information, please see the LICENSE.txt</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> * Redistributions of files must retain the above copyright notice.</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> * @link          http://cakephp.org CakePHP(tm) Project</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> * @package       app.Config</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> * @since         CakePHP(tm) v 0.2.9</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> * @license       http://www.opensource.org/licenses/mit-license.php MIT License</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> * CakePHP Debug Level:</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> * Production Mode:</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> * 	0: No error messages, errors, or warnings shown. Flash messages redirect.</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT"> * Development Mode:</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT"> * 	1: Errors and warnings shown, model caches refreshed, flash messages halted.</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT"> * 	2: As in 1, but also with full debug messages and SQL output.</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT"> * In production mode, flash messages redirect after a time interval.</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT"> * In development mode, you need to click the flash message to continue.</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="34">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_STRING">Configure</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">write</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'debug'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">2</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="35"/>
+  <line no="36">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT"> * Configure the Error handler used to handle errors for your application. By default</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT"> * ErrorHandler::handleError() is used. It will display errors using Debugger, when debug &gt; 0</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT"> * and log errors with CakeLog when debug = 0.</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT"> * Options:</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT"> * - `handler` - callback - The callback to handle errors. You can set this to any callable type,</token>
+  </line>
+  <line no="44">
+    <token name="T_DOC_COMMENT"> *   including anonymous functions.</token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT"> *   Make sure you add App::uses('MyHandler', 'Error'); when using a custom handler class</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT"> * - `level` - integer - The level of errors you are interested in capturing.</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT"> * - `trace` - boolean - Include stack traces for errors in log files.</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT"> * @see ErrorHandler for more information on error handling and configuration.</token>
+  </line>
+  <line no="50">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="51">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_STRING">Configure</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">write</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Error'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="52">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'handler'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'ErrorHandler::handleError'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="53">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'level'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">E_ALL</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_AMPERSAND">&amp;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_TILDE">~</token>
+    <token name="T_STRING">E_DEPRECATED</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="54">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'trace'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">true</token>
+  </line>
+  <line no="55">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="56"/>
+  <line no="57">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="58">
+    <token name="T_DOC_COMMENT"> * Configure the Exception handler used for uncaught exceptions. By default,</token>
+  </line>
+  <line no="59">
+    <token name="T_DOC_COMMENT"> * ErrorHandler::handleException() is used. It will display a HTML page for the exception, and</token>
+  </line>
+  <line no="60">
+    <token name="T_DOC_COMMENT"> * while debug &gt; 0, framework errors like Missing Controller will be displayed. When debug = 0,</token>
+  </line>
+  <line no="61">
+    <token name="T_DOC_COMMENT"> * framework errors will be coerced into generic HTTP errors.</token>
+  </line>
+  <line no="62">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="63">
+    <token name="T_DOC_COMMENT"> * Options:</token>
+  </line>
+  <line no="64">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="65">
+    <token name="T_DOC_COMMENT"> * - `handler` - callback - The callback to handle exceptions. You can set this to any callback type,</token>
+  </line>
+  <line no="66">
+    <token name="T_DOC_COMMENT"> *   including anonymous functions.</token>
+  </line>
+  <line no="67">
+    <token name="T_DOC_COMMENT"> *   Make sure you add App::uses('MyHandler', 'Error'); when using a custom handler class</token>
+  </line>
+  <line no="68">
+    <token name="T_DOC_COMMENT"> * - `renderer` - string - The class responsible for rendering uncaught exceptions. If you choose a custom class you</token>
+  </line>
+  <line no="69">
+    <token name="T_DOC_COMMENT"> *   should place the file for that class in app/Lib/Error. This class needs to implement a render method.</token>
+  </line>
+  <line no="70">
+    <token name="T_DOC_COMMENT"> * - `log` - boolean - Should Exceptions be logged?</token>
+  </line>
+  <line no="71">
+    <token name="T_DOC_COMMENT"> * - `skipLog` - array - list of exceptions to skip for logging. Exceptions that</token>
+  </line>
+  <line no="72">
+    <token name="T_DOC_COMMENT"> *   extend one of the listed exceptions will also be skipped for logging.</token>
+  </line>
+  <line no="73">
+    <token name="T_DOC_COMMENT"> *   Example: `'skipLog' =&gt; array('NotFoundException', 'UnauthorizedException')`</token>
+  </line>
+  <line no="74">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="75">
+    <token name="T_DOC_COMMENT"> * @see ErrorHandler for more information on exception handling and configuration.</token>
+  </line>
+  <line no="76">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="77">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_STRING">Configure</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">write</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Exception'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="78">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'handler'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'ErrorHandler::handleException'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="79">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'renderer'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'ExceptionRenderer'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="80">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'log'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">true</token>
+  </line>
+  <line no="81">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="82"/>
+  <line no="83">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="84">
+    <token name="T_DOC_COMMENT"> * Application wide charset encoding</token>
+  </line>
+  <line no="85">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="86">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_STRING">Configure</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">write</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'App.encoding'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'UTF-8'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="87"/>
+  <line no="88">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="89">
+    <token name="T_DOC_COMMENT"> * To configure CakePHP *not* to use mod_rewrite and to</token>
+  </line>
+  <line no="90">
+    <token name="T_DOC_COMMENT"> * use CakePHP pretty URLs, remove these .htaccess</token>
+  </line>
+  <line no="91">
+    <token name="T_DOC_COMMENT"> * files:</token>
+  </line>
+  <line no="92">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="93">
+    <token name="T_DOC_COMMENT"> * /.htaccess</token>
+  </line>
+  <line no="94">
+    <token name="T_DOC_COMMENT"> * /app/.htaccess</token>
+  </line>
+  <line no="95">
+    <token name="T_DOC_COMMENT"> * /app/webroot/.htaccess</token>
+  </line>
+  <line no="96">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="97">
+    <token name="T_DOC_COMMENT"> * And uncomment the App.baseUrl below. But keep in mind</token>
+  </line>
+  <line no="98">
+    <token name="T_DOC_COMMENT"> * that plugin assets such as images, CSS and JavaScript files</token>
+  </line>
+  <line no="99">
+    <token name="T_DOC_COMMENT"> * will not work without URL rewriting!</token>
+  </line>
+  <line no="100">
+    <token name="T_DOC_COMMENT"> * To work around this issue you should either symlink or copy</token>
+  </line>
+  <line no="101">
+    <token name="T_DOC_COMMENT"> * the plugin assets into you app's webroot directory. This is</token>
+  </line>
+  <line no="102">
+    <token name="T_DOC_COMMENT"> * recommended even when you are using mod_rewrite. Handling static</token>
+  </line>
+  <line no="103">
+    <token name="T_DOC_COMMENT"> * assets through the Dispatcher is incredibly inefficient and</token>
+  </line>
+  <line no="104">
+    <token name="T_DOC_COMMENT"> * included primarily as a development convenience - and</token>
+  </line>
+  <line no="105">
+    <token name="T_DOC_COMMENT"> * thus not recommended for production applications.</token>
+  </line>
+  <line no="106">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="107">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_COMMENT">//Configure::write('App.baseUrl', env('SCRIPT_NAME'));</token>
+  </line>
+  <line no="108"/>
+  <line no="109">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="110">
+    <token name="T_DOC_COMMENT"> * To configure CakePHP to use a particular domain URL</token>
+  </line>
+  <line no="111">
+    <token name="T_DOC_COMMENT"> * for any URL generation inside the application, set the following</token>
+  </line>
+  <line no="112">
+    <token name="T_DOC_COMMENT"> * configuration variable to the http(s) address to your domain. This</token>
+  </line>
+  <line no="113">
+    <token name="T_DOC_COMMENT"> * will override the automatic detection of full base URL and can be</token>
+  </line>
+  <line no="114">
+    <token name="T_DOC_COMMENT"> * useful when generating links from the CLI (e.g. sending emails)</token>
+  </line>
+  <line no="115">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="116">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_COMMENT">//Configure::write('App.fullBaseUrl', 'http://example.com');</token>
+  </line>
+  <line no="117"/>
+  <line no="118">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="119">
+    <token name="T_DOC_COMMENT"> * Web path to the public images directory under webroot.</token>
+  </line>
+  <line no="120">
+    <token name="T_DOC_COMMENT"> * If not set defaults to 'img/'</token>
+  </line>
+  <line no="121">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="122">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_COMMENT">//Configure::write('App.imageBaseUrl', 'img/');</token>
+  </line>
+  <line no="123"/>
+  <line no="124">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="125">
+    <token name="T_DOC_COMMENT"> * Web path to the CSS files directory under webroot.</token>
+  </line>
+  <line no="126">
+    <token name="T_DOC_COMMENT"> * If not set defaults to 'css/'</token>
+  </line>
+  <line no="127">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="128">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_COMMENT">//Configure::write('App.cssBaseUrl', 'css/');</token>
+  </line>
+  <line no="129"/>
+  <line no="130">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="131">
+    <token name="T_DOC_COMMENT"> * Web path to the js files directory under webroot.</token>
+  </line>
+  <line no="132">
+    <token name="T_DOC_COMMENT"> * If not set defaults to 'js/'</token>
+  </line>
+  <line no="133">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="134">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_COMMENT">//Configure::write('App.jsBaseUrl', 'js/');</token>
+  </line>
+  <line no="135"/>
+  <line no="136">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="137">
+    <token name="T_DOC_COMMENT"> * Uncomment the define below to use CakePHP prefix routes.</token>
+  </line>
+  <line no="138">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="139">
+    <token name="T_DOC_COMMENT"> * The value of the define determines the names of the routes</token>
+  </line>
+  <line no="140">
+    <token name="T_DOC_COMMENT"> * and their associated controller actions:</token>
+  </line>
+  <line no="141">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="142">
+    <token name="T_DOC_COMMENT"> * Set to an array of prefixes you want to use in your application. Use for</token>
+  </line>
+  <line no="143">
+    <token name="T_DOC_COMMENT"> * admin or other prefixed routes.</token>
+  </line>
+  <line no="144">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="145">
+    <token name="T_DOC_COMMENT"> * 	Routing.prefixes = array('admin', 'manager');</token>
+  </line>
+  <line no="146">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="147">
+    <token name="T_DOC_COMMENT"> * Enables:</token>
+  </line>
+  <line no="148">
+    <token name="T_DOC_COMMENT"> *	`admin_index()` and `/admin/controller/index`</token>
+  </line>
+  <line no="149">
+    <token name="T_DOC_COMMENT"> *	`manager_index()` and `/manager/controller/index`</token>
+  </line>
+  <line no="150">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="151">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="152">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_COMMENT">//Configure::write('Routing.prefixes', array('admin'));</token>
+  </line>
+  <line no="153"/>
+  <line no="154">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="155">
+    <token name="T_DOC_COMMENT"> * Turn off all caching application-wide.</token>
+  </line>
+  <line no="156">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="157">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="158">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_COMMENT">//Configure::write('Cache.disable', true);</token>
+  </line>
+  <line no="159"/>
+  <line no="160">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="161">
+    <token name="T_DOC_COMMENT"> * Enable cache checking.</token>
+  </line>
+  <line no="162">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="163">
+    <token name="T_DOC_COMMENT"> * If set to true, for view caching you must still use the controller</token>
+  </line>
+  <line no="164">
+    <token name="T_DOC_COMMENT"> * public $cacheAction inside your controllers to define caching settings.</token>
+  </line>
+  <line no="165">
+    <token name="T_DOC_COMMENT"> * You can either set it controller-wide by setting public $cacheAction = true,</token>
+  </line>
+  <line no="166">
+    <token name="T_DOC_COMMENT"> * or in each action using $this-&gt;cacheAction = true.</token>
+  </line>
+  <line no="167">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="168">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="169">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_COMMENT">//Configure::write('Cache.check', true);</token>
+  </line>
+  <line no="170"/>
+  <line no="171">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="172">
+    <token name="T_DOC_COMMENT"> * Enable cache view prefixes.</token>
+  </line>
+  <line no="173">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="174">
+    <token name="T_DOC_COMMENT"> * If set it will be prepended to the cache name for view file caching. This is</token>
+  </line>
+  <line no="175">
+    <token name="T_DOC_COMMENT"> * helpful if you deploy the same application via multiple subdomains and languages,</token>
+  </line>
+  <line no="176">
+    <token name="T_DOC_COMMENT"> * for instance. Each version can then have its own view cache namespace.</token>
+  </line>
+  <line no="177">
+    <token name="T_DOC_COMMENT"> * Note: The final cache file name will then be `prefix_cachefilename`.</token>
+  </line>
+  <line no="178">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="179">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_COMMENT">//Configure::write('Cache.viewPrefix', 'prefix');</token>
+  </line>
+  <line no="180"/>
+  <line no="181">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="182">
+    <token name="T_DOC_COMMENT"> * Session configuration.</token>
+  </line>
+  <line no="183">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="184">
+    <token name="T_DOC_COMMENT"> * Contains an array of settings to use for session configuration. The defaults key is</token>
+  </line>
+  <line no="185">
+    <token name="T_DOC_COMMENT"> * used to define a default preset to use for sessions, any settings declared here will override</token>
+  </line>
+  <line no="186">
+    <token name="T_DOC_COMMENT"> * the settings of the default config.</token>
+  </line>
+  <line no="187">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="188">
+    <token name="T_DOC_COMMENT"> * ## Options</token>
+  </line>
+  <line no="189">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="190">
+    <token name="T_DOC_COMMENT"> * - `Session.cookie` - The name of the cookie to use. Defaults to 'CAKEPHP'</token>
+  </line>
+  <line no="191">
+    <token name="T_DOC_COMMENT"> * - `Session.timeout` - The number of minutes you want sessions to live for. This timeout is handled by CakePHP</token>
+  </line>
+  <line no="192">
+    <token name="T_DOC_COMMENT"> * - `Session.cookieTimeout` - The number of minutes you want session cookies to live for.</token>
+  </line>
+  <line no="193">
+    <token name="T_DOC_COMMENT"> * - `Session.checkAgent` - Do you want the user agent to be checked when starting sessions? You might want to set the</token>
+  </line>
+  <line no="194">
+    <token name="T_DOC_COMMENT"> *    value to false, when dealing with older versions of IE, Chrome Frame or certain web-browsing devices and AJAX</token>
+  </line>
+  <line no="195">
+    <token name="T_DOC_COMMENT"> * - `Session.defaults` - The default configuration set to use as a basis for your session.</token>
+  </line>
+  <line no="196">
+    <token name="T_DOC_COMMENT"> *    There are four builtins: php, cake, cache, database.</token>
+  </line>
+  <line no="197">
+    <token name="T_DOC_COMMENT"> * - `Session.handler` - Can be used to enable a custom session handler. Expects an array of callables,</token>
+  </line>
+  <line no="198">
+    <token name="T_DOC_COMMENT"> *    that can be used with `session_save_handler`. Using this option will automatically add `session.save_handler`</token>
+  </line>
+  <line no="199">
+    <token name="T_DOC_COMMENT"> *    to the ini array.</token>
+  </line>
+  <line no="200">
+    <token name="T_DOC_COMMENT"> * - `Session.autoRegenerate` - Enabling this setting, turns on automatic renewal of sessions, and</token>
+  </line>
+  <line no="201">
+    <token name="T_DOC_COMMENT"> *    sessionids that change frequently. See CakeSession::$requestCountdown.</token>
+  </line>
+  <line no="202">
+    <token name="T_DOC_COMMENT"> * - `Session.ini` - An associative array of additional ini values to set.</token>
+  </line>
+  <line no="203">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="204">
+    <token name="T_DOC_COMMENT"> * The built in defaults are:</token>
+  </line>
+  <line no="205">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="206">
+    <token name="T_DOC_COMMENT"> * - 'php' - Uses settings defined in your php.ini.</token>
+  </line>
+  <line no="207">
+    <token name="T_DOC_COMMENT"> * - 'cake' - Saves session files in CakePHP's /tmp directory.</token>
+  </line>
+  <line no="208">
+    <token name="T_DOC_COMMENT"> * - 'database' - Uses CakePHP's database sessions.</token>
+  </line>
+  <line no="209">
+    <token name="T_DOC_COMMENT"> * - 'cache' - Use the Cache class to save sessions.</token>
+  </line>
+  <line no="210">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="211">
+    <token name="T_DOC_COMMENT"> * To define a custom session handler, save it at /app/Model/Datasource/Session/&lt;name&gt;.php.</token>
+  </line>
+  <line no="212">
+    <token name="T_DOC_COMMENT"> * Make sure the class implements `CakeSessionHandlerInterface` and set Session.handler to &lt;name&gt;</token>
+  </line>
+  <line no="213">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="214">
+    <token name="T_DOC_COMMENT"> * To use database sessions, run the app/Config/Schema/sessions.php schema using</token>
+  </line>
+  <line no="215">
+    <token name="T_DOC_COMMENT"> * the cake shell command: cake schema create Sessions</token>
+  </line>
+  <line no="216">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="217">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="218">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_STRING">Configure</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">write</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Session'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="219">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'defaults'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'php'</token>
+  </line>
+  <line no="220">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="221"/>
+  <line no="222">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="223">
+    <token name="T_DOC_COMMENT"> * A random string used in security hashing methods.</token>
+  </line>
+  <line no="224">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="225">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_STRING">Configure</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">write</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Security.salt'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9micalendar'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="226"/>
+  <line no="227">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="228">
+    <token name="T_DOC_COMMENT"> * A random numeric string (digits only) used to encrypt/decrypt strings.</token>
+  </line>
+  <line no="229">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="230">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_STRING">Configure</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">write</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Security.cipherSeed'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'76859309657453542496749683645calendar'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="231"/>
+  <line no="232">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="233">
+    <token name="T_DOC_COMMENT"> * Apply timestamps with the last modified time to static assets (js, css, images).</token>
+  </line>
+  <line no="234">
+    <token name="T_DOC_COMMENT"> * Will append a query string parameter containing the time the file was modified. This is</token>
+  </line>
+  <line no="235">
+    <token name="T_DOC_COMMENT"> * useful for invalidating browser caches.</token>
+  </line>
+  <line no="236">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="237">
+    <token name="T_DOC_COMMENT"> * Set to `true` to apply timestamps when debug &gt; 0. Set to 'force' to always enable</token>
+  </line>
+  <line no="238">
+    <token name="T_DOC_COMMENT"> * timestamping regardless of debug value.</token>
+  </line>
+  <line no="239">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="240">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_COMMENT">//Configure::write('Asset.timestamp', true);</token>
+  </line>
+  <line no="241"/>
+  <line no="242">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="243">
+    <token name="T_DOC_COMMENT"> * Compress CSS output by removing comments, whitespace, repeating tags, etc.</token>
+  </line>
+  <line no="244">
+    <token name="T_DOC_COMMENT"> * This requires a/var/cache directory to be writable by the web server for caching.</token>
+  </line>
+  <line no="245">
+    <token name="T_DOC_COMMENT"> * and /vendors/csspp/csspp.php</token>
+  </line>
+  <line no="246">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="247">
+    <token name="T_DOC_COMMENT"> * To use, prefix the CSS link URL with '/ccss/' instead of '/css/' or use HtmlHelper::css().</token>
+  </line>
+  <line no="248">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="249">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_COMMENT">//Configure::write('Asset.filter.css', 'css.php');</token>
+  </line>
+  <line no="250"/>
+  <line no="251">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="252">
+    <token name="T_DOC_COMMENT"> * Plug in your own custom JavaScript compressor by dropping a script in your webroot to handle the</token>
+  </line>
+  <line no="253">
+    <token name="T_DOC_COMMENT"> * output, and setting the config below to the name of the script.</token>
+  </line>
+  <line no="254">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="255">
+    <token name="T_DOC_COMMENT"> * To use, prefix your JavaScript link URLs with '/cjs/' instead of '/js/' or use JsHelper::link().</token>
+  </line>
+  <line no="256">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="257">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_COMMENT">//Configure::write('Asset.filter.js', 'custom_javascript_output_filter.php');</token>
+  </line>
+  <line no="258"/>
+  <line no="259">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="260">
+    <token name="T_DOC_COMMENT"> * The class name and database used in CakePHP's</token>
+  </line>
+  <line no="261">
+    <token name="T_DOC_COMMENT"> * access control lists.</token>
+  </line>
+  <line no="262">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="263">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_STRING">Configure</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">write</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Acl.classname'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'DbAcl'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="264">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_STRING">Configure</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">write</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Acl.database'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'default'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="265"/>
+  <line no="266">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="267">
+    <token name="T_DOC_COMMENT"> * Uncomment this line and correct your server timezone to fix</token>
+  </line>
+  <line no="268">
+    <token name="T_DOC_COMMENT"> * any date &amp; time related errors.</token>
+  </line>
+  <line no="269">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="270">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_COMMENT">//date_default_timezone_set('UTC');</token>
+  </line>
+  <line no="271"/>
+  <line no="272">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="273">
+    <token name="T_DOC_COMMENT"> * `Config.timezone` is available in which you can set users' timezone string.</token>
+  </line>
+  <line no="274">
+    <token name="T_DOC_COMMENT"> * If a method of CakeTime class is called with $timezone parameter as null and `Config.timezone` is set,</token>
+  </line>
+  <line no="275">
+    <token name="T_DOC_COMMENT"> * then the value of `Config.timezone` will be used. This feature allows you to set users' timezone just</token>
+  </line>
+  <line no="276">
+    <token name="T_DOC_COMMENT"> * once instead of passing it each time in function calls.</token>
+  </line>
+  <line no="277">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="278">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_COMMENT">//Configure::write('Config.timezone', 'Europe/Paris');</token>
+  </line>
+  <line no="279"/>
+  <line no="280">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="281">
+    <token name="T_DOC_COMMENT"> * Cache Engine Configuration</token>
+  </line>
+  <line no="282">
+    <token name="T_DOC_COMMENT"> * Default settings provided below</token>
+  </line>
+  <line no="283">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="284">
+    <token name="T_DOC_COMMENT"> * File storage engine.</token>
+  </line>
+  <line no="285">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="286">
+    <token name="T_DOC_COMMENT"> * 	 Cache::config('default', array(</token>
+  </line>
+  <line no="287">
+    <token name="T_DOC_COMMENT"> *		'engine' =&gt; 'File', //[required]</token>
+  </line>
+  <line no="288">
+    <token name="T_DOC_COMMENT"> *		'duration' =&gt; 3600, //[optional]</token>
+  </line>
+  <line no="289">
+    <token name="T_DOC_COMMENT"> *		'probability' =&gt; 100, //[optional]</token>
+  </line>
+  <line no="290">
+    <token name="T_DOC_COMMENT"> * 		'path' =&gt; CACHE, //[optional] use system tmp directory - remember to use absolute path</token>
+  </line>
+  <line no="291">
+    <token name="T_DOC_COMMENT"> * 		'prefix' =&gt; 'cake_', //[optional]  prefix every cache file with this string</token>
+  </line>
+  <line no="292">
+    <token name="T_DOC_COMMENT"> * 		'lock' =&gt; false, //[optional]  use file locking</token>
+  </line>
+  <line no="293">
+    <token name="T_DOC_COMMENT"> * 		'serialize' =&gt; true, //[optional]</token>
+  </line>
+  <line no="294">
+    <token name="T_DOC_COMMENT"> * 		'mask' =&gt; 0664, //[optional]</token>
+  </line>
+  <line no="295">
+    <token name="T_DOC_COMMENT"> *	));</token>
+  </line>
+  <line no="296">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="297">
+    <token name="T_DOC_COMMENT"> * APC (http://pecl.php.net/package/APC)</token>
+  </line>
+  <line no="298">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="299">
+    <token name="T_DOC_COMMENT"> * 	 Cache::config('default', array(</token>
+  </line>
+  <line no="300">
+    <token name="T_DOC_COMMENT"> *		'engine' =&gt; 'Apc', //[required]</token>
+  </line>
+  <line no="301">
+    <token name="T_DOC_COMMENT"> *		'duration' =&gt; 3600, //[optional]</token>
+  </line>
+  <line no="302">
+    <token name="T_DOC_COMMENT"> *		'probability' =&gt; 100, //[optional]</token>
+  </line>
+  <line no="303">
+    <token name="T_DOC_COMMENT"> * 		'prefix' =&gt; Inflector::slug(APP_DIR) . '_', //[optional]  prefix every cache file with this string</token>
+  </line>
+  <line no="304">
+    <token name="T_DOC_COMMENT"> *	));</token>
+  </line>
+  <line no="305">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="306">
+    <token name="T_DOC_COMMENT"> * Xcache (http://xcache.lighttpd.net/)</token>
+  </line>
+  <line no="307">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="308">
+    <token name="T_DOC_COMMENT"> * 	 Cache::config('default', array(</token>
+  </line>
+  <line no="309">
+    <token name="T_DOC_COMMENT"> *		'engine' =&gt; 'Xcache', //[required]</token>
+  </line>
+  <line no="310">
+    <token name="T_DOC_COMMENT"> *		'duration' =&gt; 3600, //[optional]</token>
+  </line>
+  <line no="311">
+    <token name="T_DOC_COMMENT"> *		'probability' =&gt; 100, //[optional]</token>
+  </line>
+  <line no="312">
+    <token name="T_DOC_COMMENT"> *		'prefix' =&gt; Inflector::slug(APP_DIR) . '_', //[optional] prefix every cache file with this string</token>
+  </line>
+  <line no="313">
+    <token name="T_DOC_COMMENT"> *		'user' =&gt; 'user', //user from xcache.admin.user settings</token>
+  </line>
+  <line no="314">
+    <token name="T_DOC_COMMENT"> *		'password' =&gt; 'password', //plaintext password (xcache.admin.pass)</token>
+  </line>
+  <line no="315">
+    <token name="T_DOC_COMMENT"> *	));</token>
+  </line>
+  <line no="316">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="317">
+    <token name="T_DOC_COMMENT"> * Memcached (http://www.danga.com/memcached/)</token>
+  </line>
+  <line no="318">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="319">
+    <token name="T_DOC_COMMENT"> * Uses the memcached extension. See http://php.net/memcached</token>
+  </line>
+  <line no="320">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="321">
+    <token name="T_DOC_COMMENT"> * 	 Cache::config('default', array(</token>
+  </line>
+  <line no="322">
+    <token name="T_DOC_COMMENT"> *		'engine' =&gt; 'Memcached', //[required]</token>
+  </line>
+  <line no="323">
+    <token name="T_DOC_COMMENT"> *		'duration' =&gt; 3600, //[optional]</token>
+  </line>
+  <line no="324">
+    <token name="T_DOC_COMMENT"> *		'probability' =&gt; 100, //[optional]</token>
+  </line>
+  <line no="325">
+    <token name="T_DOC_COMMENT"> * 		'prefix' =&gt; Inflector::slug(APP_DIR) . '_', //[optional]  prefix every cache file with this string</token>
+  </line>
+  <line no="326">
+    <token name="T_DOC_COMMENT"> * 		'servers' =&gt; array(</token>
+  </line>
+  <line no="327">
+    <token name="T_DOC_COMMENT"> * 			'127.0.0.1:11211' // localhost, default port 11211</token>
+  </line>
+  <line no="328">
+    <token name="T_DOC_COMMENT"> * 		), //[optional]</token>
+  </line>
+  <line no="329">
+    <token name="T_DOC_COMMENT"> * 		'persistent' =&gt; 'my_connection', // [optional] The name of the persistent connection.</token>
+  </line>
+  <line no="330">
+    <token name="T_DOC_COMMENT"> * 		'compress' =&gt; false, // [optional] compress data in Memcached (slower, but uses less memory)</token>
+  </line>
+  <line no="331">
+    <token name="T_DOC_COMMENT"> *	));</token>
+  </line>
+  <line no="332">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="333">
+    <token name="T_DOC_COMMENT"> *  Wincache (http://php.net/wincache)</token>
+  </line>
+  <line no="334">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="335">
+    <token name="T_DOC_COMMENT"> * 	 Cache::config('default', array(</token>
+  </line>
+  <line no="336">
+    <token name="T_DOC_COMMENT"> *		'engine' =&gt; 'Wincache', //[required]</token>
+  </line>
+  <line no="337">
+    <token name="T_DOC_COMMENT"> *		'duration' =&gt; 3600, //[optional]</token>
+  </line>
+  <line no="338">
+    <token name="T_DOC_COMMENT"> *		'probability' =&gt; 100, //[optional]</token>
+  </line>
+  <line no="339">
+    <token name="T_DOC_COMMENT"> *		'prefix' =&gt; Inflector::slug(APP_DIR) . '_', //[optional]  prefix every cache file with this string</token>
+  </line>
+  <line no="340">
+    <token name="T_DOC_COMMENT"> *	));</token>
+  </line>
+  <line no="341">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="342"/>
+  <line no="343">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="344">
+    <token name="T_DOC_COMMENT"> * Configure the cache handlers that CakePHP will use for internal</token>
+  </line>
+  <line no="345">
+    <token name="T_DOC_COMMENT"> * metadata like class maps, and model schema.</token>
+  </line>
+  <line no="346">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="347">
+    <token name="T_DOC_COMMENT"> * By default File is used, but for improved performance you should use APC.</token>
+  </line>
+  <line no="348">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="349">
+    <token name="T_DOC_COMMENT"> * Note: 'default' and other application caches should be configured in app/Config/bootstrap.php.</token>
+  </line>
+  <line no="350">
+    <token name="T_DOC_COMMENT"> *       Please check the comments in bootstrap.php for more info on the cache engines available</token>
+  </line>
+  <line no="351">
+    <token name="T_DOC_COMMENT"> *       and their settings.</token>
+  </line>
+  <line no="352">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="353">
+    <token name="T_VARIABLE">$engine</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'File'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="354"/>
+  <line no="355">
+    <token name="T_COMMENT">// In development mode, caches should expire quickly.</token>
+  </line>
+  <line no="356">
+    <token name="T_VARIABLE">$duration</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'+999 days'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="357">
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">Configure</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">read</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'debug'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_GT">&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="358">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$duration</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'+10 seconds'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="359">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="360"/>
+  <line no="361">
+    <token name="T_COMMENT">// Prefix each application on the same server with a different string, to avoid Memcache and APC conflicts.</token>
+  </line>
+  <line no="362">
+    <token name="T_VARIABLE">$prefix</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'myapp_'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="363"/>
+  <line no="364">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="365">
+    <token name="T_DOC_COMMENT"> * Configure the cache used for general framework caching. Path information,</token>
+  </line>
+  <line no="366">
+    <token name="T_DOC_COMMENT"> * object listings, and translation cache files are stored with this configuration.</token>
+  </line>
+  <line no="367">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="368">
+    <token name="T_STRING">Cache</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">config</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_cake_core_'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="369">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'engine'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$engine</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="370">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'prefix'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$prefix</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'cake_core_'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="371">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'path'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">CACHE</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'persistent'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">DS</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="372">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'serialize'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$engine</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_IDENTICAL">===</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'File'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="373">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'duration'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$duration</token>
+  </line>
+  <line no="374">
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="375"/>
+  <line no="376">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="377">
+    <token name="T_DOC_COMMENT"> * Configure the cache for model and datasource caches. This cache configuration</token>
+  </line>
+  <line no="378">
+    <token name="T_DOC_COMMENT"> * is used to store schema descriptions, and table listings in connections.</token>
+  </line>
+  <line no="379">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="380">
+    <token name="T_STRING">Cache</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">config</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_cake_model_'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="381">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'engine'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$engine</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="382">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'prefix'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$prefix</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'cake_model_'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="383">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'path'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">CACHE</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'models'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">DS</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="384">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'serialize'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$engine</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_IDENTICAL">===</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'File'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="385">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'duration'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$duration</token>
+  </line>
+  <line no="386">
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="387"/>
+</source>

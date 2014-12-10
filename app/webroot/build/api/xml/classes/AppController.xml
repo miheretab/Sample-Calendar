@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="AppController" namespace="" name="AppController" abstract="false" final="false" start="33" end="34">
+  <file path="C:/wamp/www/calendar/app/Controller" file="AppController.php" realpath="C:/wamp/www/calendar/app/Controller/AppController.php" size="1120" time="2014-12-09T15:53:09+01:00" unixtime="1418136789" sha1="01b0c2beca525985f5316d626587a8c62f1e64de" relative="Controller/AppController.php"/>
+  <docblock>
+    <description compact="Application Controller">Add your application-wide methods in the class below, your controllers
+will inherit them.</description>
+    <package value="app.Controller"/>
+    <link value="http://book.cakephp.org/2.0/en/controllers.html#the-app-controller"/>
+  </docblock>
+  <extends full="Controller" namespace="" name="Controller"/>
+  <extenders>
+    <extender full="EventsController" namespace="" name="EventsController"/>
+    <extender full="PagesController" namespace="" name="PagesController"/>
+  </extenders>
+</class>

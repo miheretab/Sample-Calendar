@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SessionsSchema" namespace="" name="SessionsSchema" abstract="false" final="false" start="27" end="57">
+  <file path="C:/wamp/www/calendar/app/Config/Schema" file="sessions.php" realpath="C:/wamp/www/calendar/app/Config/Schema/sessions.php" size="1546" time="2014-12-09T15:53:09+01:00" unixtime="1418136789" sha1="45dca5b017451bc59a0770bd5eacc658f3429133" relative="Config/Schema/sessions.php"/>
+  <extends full="CakeSchema" namespace="" name="CakeSchema"/>
+  <member name="name" type="string" default="'Sessions'" visibility="public" line="29"/>
+  <method name="before" start="37" end="39" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Before callback."/>
+      <param description="Schema object properties" type="array" variable="$event"/>
+      <return description="Should process continue" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="event" byreference="false" type="array"/>
+  </method>
+  <method name="after" start="47" end="48" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="After callback."/>
+      <param description="Schema object properties" type="array" variable="$event"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="event" byreference="false" type="array"/>
+  </method>
+  <member name="cake_sessions" type="array" visibility="public" line="50"/>
+</class>

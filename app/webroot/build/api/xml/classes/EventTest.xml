@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="EventTest" namespace="" name="EventTest" abstract="false" final="false" start="8" end="40">
+  <file path="C:/wamp/www/calendar/app/Test/Case/Model" file="EventTest.php" realpath="C:/wamp/www/calendar/app/Test/Case/Model/EventTest.php" size="497" time="2014-12-09T17:12:25+01:00" unixtime="1418141545" sha1="e8e0406d682b1372e538477814a20b2e040c368c" relative="Test/Case/Model/EventTest.php"/>
+  <docblock>
+    <description compact="Event Test Case"/>
+  </docblock>
+  <extends full="CakeTestCase" namespace="" name="CakeTestCase"/>
+  <member name="fixtures" type="array" visibility="public" line="15">
+    <docblock>
+      <description compact="Fixtures"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <method name="setUp" start="24" end="27" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="setUp method"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="tearDown" start="34" end="38" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="tearDown method"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+  </method>
+</class>

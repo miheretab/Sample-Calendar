@@ -1,0 +1,512 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="C:/wamp/www/calendar/app/Config" file="acl.php" realpath="C:/wamp/www/calendar/app/Config/acl.php" size="4933" time="2014-12-09T15:53:08+01:00" unixtime="1418136788" sha1="8f91ecc801461c11f8376103cc121b8f3a5dbdec" relative="Config/acl.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="3">
+    <token name="T_DOC_COMMENT"> * This is the PHP base ACL configuration file.</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * Use it to configure access control of your CakePHP application.</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> * Licensed under The MIT License</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * For full copyright and license information, please see the LICENSE.txt</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> * Redistributions of files must retain the above copyright notice.</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> * @link          http://cakephp.org CakePHP(tm) Project</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> * @package       app.Config</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> * @since         CakePHP(tm) v 2.1</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> * @license       http://www.opensource.org/licenses/mit-license.php MIT License</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> * Example</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> * -------</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> * Assumptions:</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT"> * 1. In your application you created a User model with the following properties:</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT"> *    username, group_id, password, email, firstname, lastname and so on.</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT"> * 2. You configured AuthComponent to authorize actions via</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT"> *    $this-&gt;Auth-&gt;authorize = array('Actions' =&gt; array('actionPath' =&gt; 'controllers/'),...)</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT"> * Now, when a user (i.e. jeff) authenticates successfully and requests a controller action (i.e. /invoices/delete)</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT"> * that is not allowed by default (e.g. via $this-&gt;Auth-&gt;allow('edit') in the Invoices controller) then AuthComponent</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT"> * will ask the configured ACL interface if access is granted. Under the assumptions 1. and 2. this will be</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT"> * done via a call to Acl-&gt;check() with</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT"> * {{{</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT"> * array('User' =&gt; array('username' =&gt; 'jeff', 'group_id' =&gt; 4, ...))</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT"> * }}}</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT"> * as ARO and</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT"> * {{{</token>
+  </line>
+  <line no="44">
+    <token name="T_DOC_COMMENT"> * '/controllers/invoices/delete'</token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT"> * }}}</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT"> * as ACO.</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT"> * If the configured map looks like</token>
+  </line>
+  <line no="50">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="51">
+    <token name="T_DOC_COMMENT"> * {{{</token>
+  </line>
+  <line no="52">
+    <token name="T_DOC_COMMENT"> * $config['map'] = array(</token>
+  </line>
+  <line no="53">
+    <token name="T_DOC_COMMENT"> *    'User' =&gt; 'User/username',</token>
+  </line>
+  <line no="54">
+    <token name="T_DOC_COMMENT"> *    'Role' =&gt; 'User/group_id',</token>
+  </line>
+  <line no="55">
+    <token name="T_DOC_COMMENT"> * );</token>
+  </line>
+  <line no="56">
+    <token name="T_DOC_COMMENT"> * }}}</token>
+  </line>
+  <line no="57">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="58">
+    <token name="T_DOC_COMMENT"> * then PhpAcl will lookup if we defined a role like User/jeff. If that role is not found, PhpAcl will try to</token>
+  </line>
+  <line no="59">
+    <token name="T_DOC_COMMENT"> * find a definition for Role/4. If the definition isn't found then a default role (Role/default) will be used to</token>
+  </line>
+  <line no="60">
+    <token name="T_DOC_COMMENT"> * check rules for the given ACO. The search can be expanded by defining aliases in the alias configuration.</token>
+  </line>
+  <line no="61">
+    <token name="T_DOC_COMMENT"> * E.g. if you want to use a more readable name than Role/4 in your definitions you can define an alias like</token>
+  </line>
+  <line no="62">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="63">
+    <token name="T_DOC_COMMENT"> * {{{</token>
+  </line>
+  <line no="64">
+    <token name="T_DOC_COMMENT"> * $config['alias'] = array(</token>
+  </line>
+  <line no="65">
+    <token name="T_DOC_COMMENT"> *    'Role/4' =&gt; 'Role/editor',</token>
+  </line>
+  <line no="66">
+    <token name="T_DOC_COMMENT"> * );</token>
+  </line>
+  <line no="67">
+    <token name="T_DOC_COMMENT"> * }}}</token>
+  </line>
+  <line no="68">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="69">
+    <token name="T_DOC_COMMENT"> * In the roles configuration you can define roles on the lhs and inherited roles on the rhs:</token>
+  </line>
+  <line no="70">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="71">
+    <token name="T_DOC_COMMENT"> * {{{</token>
+  </line>
+  <line no="72">
+    <token name="T_DOC_COMMENT"> * $config['roles'] = array(</token>
+  </line>
+  <line no="73">
+    <token name="T_DOC_COMMENT"> *    'Role/admin' =&gt; null,</token>
+  </line>
+  <line no="74">
+    <token name="T_DOC_COMMENT"> *    'Role/accountant' =&gt; null,</token>
+  </line>
+  <line no="75">
+    <token name="T_DOC_COMMENT"> *    'Role/editor' =&gt; null,</token>
+  </line>
+  <line no="76">
+    <token name="T_DOC_COMMENT"> *    'Role/manager' =&gt; 'Role/editor, Role/accountant',</token>
+  </line>
+  <line no="77">
+    <token name="T_DOC_COMMENT"> *    'User/jeff' =&gt; 'Role/manager',</token>
+  </line>
+  <line no="78">
+    <token name="T_DOC_COMMENT"> * );</token>
+  </line>
+  <line no="79">
+    <token name="T_DOC_COMMENT"> * }}}</token>
+  </line>
+  <line no="80">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="81">
+    <token name="T_DOC_COMMENT"> * In this example manager inherits all rules from editor and accountant. Role/admin doesn't inherit from any role.</token>
+  </line>
+  <line no="82">
+    <token name="T_DOC_COMMENT"> * Lets define some rules:</token>
+  </line>
+  <line no="83">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="84">
+    <token name="T_DOC_COMMENT"> * {{{</token>
+  </line>
+  <line no="85">
+    <token name="T_DOC_COMMENT"> * $config['rules'] = array(</token>
+  </line>
+  <line no="86">
+    <token name="T_DOC_COMMENT"> *    'allow' =&gt; array(</token>
+  </line>
+  <line no="87">
+    <token name="T_DOC_COMMENT"> *        '*' =&gt; 'Role/admin',</token>
+  </line>
+  <line no="88">
+    <token name="T_DOC_COMMENT"> *        'controllers/users/(dashboard|profile)' =&gt; 'Role/default',</token>
+  </line>
+  <line no="89">
+    <token name="T_DOC_COMMENT"> *        'controllers/invoices/*' =&gt; 'Role/accountant',</token>
+  </line>
+  <line no="90">
+    <token name="T_DOC_COMMENT"> *        'controllers/articles/*' =&gt; 'Role/editor',</token>
+  </line>
+  <line no="91">
+    <token name="T_DOC_COMMENT"> *        'controllers/users/*'  =&gt; 'Role/manager',</token>
+  </line>
+  <line no="92">
+    <token name="T_DOC_COMMENT"> *        'controllers/invoices/delete'  =&gt; 'Role/manager',</token>
+  </line>
+  <line no="93">
+    <token name="T_DOC_COMMENT"> *    ),</token>
+  </line>
+  <line no="94">
+    <token name="T_DOC_COMMENT"> *    'deny' =&gt; array(</token>
+  </line>
+  <line no="95">
+    <token name="T_DOC_COMMENT"> *        'controllers/invoices/delete' =&gt; 'Role/accountant, User/jeff',</token>
+  </line>
+  <line no="96">
+    <token name="T_DOC_COMMENT"> *        'controllers/articles/(delete|publish)' =&gt; 'Role/editor',</token>
+  </line>
+  <line no="97">
+    <token name="T_DOC_COMMENT"> *    ),</token>
+  </line>
+  <line no="98">
+    <token name="T_DOC_COMMENT"> * );</token>
+  </line>
+  <line no="99">
+    <token name="T_DOC_COMMENT"> * }}}</token>
+  </line>
+  <line no="100">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="101">
+    <token name="T_DOC_COMMENT"> * Ok, so as jeff inherits from Role/manager he's matched every rule that references User/jeff, Role/manager,</token>
+  </line>
+  <line no="102">
+    <token name="T_DOC_COMMENT"> * Role/editor, and Role/accountant. However, for jeff, rules for User/jeff are more specific than</token>
+  </line>
+  <line no="103">
+    <token name="T_DOC_COMMENT"> * rules for Role/manager, rules for Role/manager are more specific than rules for Role/editor and so on.</token>
+  </line>
+  <line no="104">
+    <token name="T_DOC_COMMENT"> * This is important when allow and deny rules match for a role. E.g. Role/accountant is allowed</token>
+  </line>
+  <line no="105">
+    <token name="T_DOC_COMMENT"> * controllers/invoices/* but at the same time controllers/invoices/delete is denied. But there is a more</token>
+  </line>
+  <line no="106">
+    <token name="T_DOC_COMMENT"> * specific rule defined for Role/manager which is allowed controllers/invoices/delete. However, the most specific</token>
+  </line>
+  <line no="107">
+    <token name="T_DOC_COMMENT"> * rule denies access to the delete action explicitly for User/jeff, so he'll be denied access to the resource.</token>
+  </line>
+  <line no="108">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="109">
+    <token name="T_DOC_COMMENT"> * If we would remove the role definition for User/jeff, then jeff would be granted access as he would be resolved</token>
+  </line>
+  <line no="110">
+    <token name="T_DOC_COMMENT"> * to Role/manager and Role/manager has an allow rule.</token>
+  </line>
+  <line no="111">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="112"/>
+  <line no="113">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="114">
+    <token name="T_DOC_COMMENT"> * The role map defines how to resolve the user record from your application</token>
+  </line>
+  <line no="115">
+    <token name="T_DOC_COMMENT"> * to the roles you defined in the roles configuration.</token>
+  </line>
+  <line no="116">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="117">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'map'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="118">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'User'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'User/username'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="119">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Role'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'User/group_id'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="120">
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="121"/>
+  <line no="122">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="123">
+    <token name="T_DOC_COMMENT"> * define aliases to map your model information to</token>
+  </line>
+  <line no="124">
+    <token name="T_DOC_COMMENT"> * the roles defined in your role configuration.</token>
+  </line>
+  <line no="125">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="126">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'alias'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="127">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Role/4'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Role/editor'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="128">
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="129"/>
+  <line no="130">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="131">
+    <token name="T_DOC_COMMENT"> * role configuration</token>
+  </line>
+  <line no="132">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="133">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'roles'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="134">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Role/admin'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">null</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="135">
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="136"/>
+  <line no="137">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="138">
+    <token name="T_DOC_COMMENT"> * rule configuration</token>
+  </line>
+  <line no="139">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="140">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'rules'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="141">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'allow'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="142">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'*'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Role/admin'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="143">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="144">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'deny'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="145">
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="146"/>
+<enrichments xmlns="http://xml.phpdox.net/src"><enrichment type="build"><date unix="1418224432" date="10-12-2014" time="16:13:52" iso="2014-12-10T16:13:52+01:00" rfc="Wed, 10 Dec 2014 16:13:52 +0100"/><phpdox xmlns="http://xml.phpdox.net/src" version="" info="phpDox  - Copyright (C) 2010 - 2014 by Arne Blankerts" generated="Generated using phpDox  - Copyright (C) 2010 - 2014 by Arne Blankerts" phar="no"><enricher type="build"/><enricher type="git"/><enricher type="checkstyle"/><enricher type="pmd"/><enricher type="phploc"/><enricher type="phpunit"/></phpdox><php xmlns="http://xml.phpdox.net/src" version="5.5.12" os="WINNT"><zendextension name="Xdebug"/><extension name="Core"/><extension name="bcmath"/><extension name="calendar"/><extension name="ctype"/><extension name="date"/><extension name="ereg"/><extension name="filter"/><extension name="ftp"/><extension name="hash"/><extension name="iconv"/><extension name="json"/><extension name="mcrypt"/><extension name="SPL"/><extension name="odbc"/><extension name="pcre"/><extension name="Reflection"/><extension name="session"/><extension name="standard"/><extension name="mysqlnd"/><extension name="tokenizer"/><extension name="zip"/><extension name="zlib"/><extension name="libxml"/><extension name="dom"/><extension name="PDO"/><extension name="bz2"/><extension name="SimpleXML"/><extension name="wddx"/><extension name="xml"/><extension name="xmlreader"/><extension name="xmlwriter"/><extension name="openssl"/><extension name="curl"/><extension name="com_dotnet"/><extension name="fileinfo"/><extension name="gd"/><extension name="gettext"/><extension name="gmp"/><extension name="intl"/><extension name="imap"/><extension name="ldap"/><extension name="mbstring"/><extension name="exif"/><extension name="mysql"/><extension name="mysqli"/><extension name="Phar"/><extension name="pdo_mysql"/><extension name="pdo_sqlite"/><extension name="shmop"/><extension name="soap"/><extension name="sockets"/><extension name="sqlite3"/><extension name="xmlrpc"/><extension name="xsl"/><extension name="mhash"/><extension name="xdebug"/></php></enrichment></enrichments></source>

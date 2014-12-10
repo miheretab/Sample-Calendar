@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - DATABASE_CONFIG</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">DATABASE_CONFIG</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="../source/Config/database.php.xhtml#line65">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>DATABASE_CONFIG</h1>
+        <h4>Database configuration class.</h4>
+        <p>You can specify multiple configurations for production, development and testing.<br/><br/>datasource =&gt; The name of a supported datasource; valid options are as follows:<br/>Database/Mysql - MySQL 4 &amp; 5,<br/>Database/Sqlite - SQLite (PHP5 only),<br/>Database/Postgres - PostgreSQL 7 and higher,<br/>Database/Sqlserver - Microsoft SQL Server 2005 and higher<br/><br/>You can add custom database datasources (or override existing datasources) by adding the<br/>appropriate file to app/Model/Datasource/Database. Datasources should be named 'MyDatasource.php',<br/><br/><br/>persistent =&gt; true / false<br/>Determines whether or not the database should use a persistent connection<br/><br/>host =&gt;<br/>the host you connect to the database. To add a socket or port number, use 'port' =&gt; #<br/><br/>prefix =&gt;<br/>Uses the given prefix for all the tables in this database. This setting can be overridden<br/>on a per-table basis with the Model::$tablePrefix property.<br/><br/>schema =&gt;<br/>For Postgres/Sqlserver specifies which schema you would like to use the tables in.<br/>Postgres defaults to 'public'. For Sqlserver, it defaults to empty and use<br/>the connected user's default schema (typically 'dbo').<br/><br/>encoding =&gt;<br/>For MySQL, Postgres specifies the character encoding to use when connecting to the<br/>database. Uses database default not specified.<br/><br/>unix_socket =&gt;<br/>For MySQL to connect via socket specify the `unix_socket` parameter instead of `host` and `port`<br/><br/>settings =&gt;<br/>Array of key/value pairs, on connection it executes SET statements for each pair<br/>For MySQL : http://dev.mysql.com/doc/refman/5.6/en/set-statement.html<br/>For Postgres : http://www.postgresql.org/docs/9.2/static/sql-set.html<br/>For Sql Server : http://msdn.microsoft.com/en-us/library/ms190356.aspx<br/><br/>flags =&gt;<br/>A key/value array of driver specific connection options.</p>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class DATABASE_CONFIG
+            {<br/><ul class="none"><li>// members</li><li>public array <a href="#members">$default</a>;
+                    </li><li>public array <a href="#members">$test</a>;
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>public</h4>
+          <ul class="members">
+            <li id="default">
+              <strong>$default</strong>
+            </li>
+            <li id="test">
+              <strong>$test</strong>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox  - Copyright (C) 2010 - 2014 by Arne Blankerts</span>
+    </footer>
+  </body>
+</html>

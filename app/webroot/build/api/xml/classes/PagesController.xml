@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="PagesController" namespace="" name="PagesController" abstract="false" final="false" start="13" end="31">
+  <file path="C:/wamp/www/calendar/app/Controller" file="PagesController.php" realpath="C:/wamp/www/calendar/app/Controller/PagesController.php" size="628" time="2014-12-10T16:13:23+01:00" unixtime="1418224403" sha1="f82b7e11de40d7c0e59921a7c5d5e425a300e90e" relative="Controller/PagesController.php"/>
+  <docblock>
+    <description compact="Static content controller">Override this controller by placing a copy in controllers directory of an application</description>
+    <package value="app.Controller"/>
+    <link value="http://book.cakephp.org/2.0/en/controllers/pages-controller.html"/>
+  </docblock>
+  <extends full="AppController" namespace="" name="AppController"/>
+  <member name="uses" type="array" visibility="public" line="20">
+    <docblock>
+      <description compact="This controller does not use a model"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <method name="home" start="28" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Dispays calendar with events marked when hover, it shows list of event names and when clicked it'll go to list of event page on the selected date"/>
+    </docblock>
+  </method>
+  <parent full="AppController" namespace="" name="AppController">
+    <extends full="Controller" namespace="" name="Controller"/>
+  </parent>
+</class>

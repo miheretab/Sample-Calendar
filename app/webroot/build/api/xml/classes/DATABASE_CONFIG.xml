@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="DATABASE_CONFIG" namespace="" name="DATABASE_CONFIG" abstract="false" final="false" start="65" end="88">
+  <file path="C:/wamp/www/calendar/app/Config" file="database.php" realpath="C:/wamp/www/calendar/app/Config/database.php" size="3038" time="2014-12-09T16:59:45+01:00" unixtime="1418140785" sha1="d53639f5da3d4c40994893a5aaafd30dda191bf5" relative="Config/database.php"/>
+  <docblock>
+    <description compact="Database configuration class.">You can specify multiple configurations for production, development and testing.
+
+datasource =&gt; The name of a supported datasource; valid options are as follows:
+ Database/Mysql - MySQL 4 &amp; 5,
+ Database/Sqlite - SQLite (PHP5 only),
+ Database/Postgres - PostgreSQL 7 and higher,
+ Database/Sqlserver - Microsoft SQL Server 2005 and higher
+
+You can add custom database datasources (or override existing datasources) by adding the
+appropriate file to app/Model/Datasource/Database. Datasources should be named 'MyDatasource.php',
+
+
+persistent =&gt; true / false
+Determines whether or not the database should use a persistent connection
+
+host =&gt;
+the host you connect to the database. To add a socket or port number, use 'port' =&gt; #
+
+prefix =&gt;
+Uses the given prefix for all the tables in this database. This setting can be overridden
+on a per-table basis with the Model::$tablePrefix property.
+
+schema =&gt;
+For Postgres/Sqlserver specifies which schema you would like to use the tables in.
+Postgres defaults to 'public'. For Sqlserver, it defaults to empty and use
+the connected user's default schema (typically 'dbo').
+
+encoding =&gt;
+For MySQL, Postgres specifies the character encoding to use when connecting to the
+database. Uses database default not specified.
+
+unix_socket =&gt;
+For MySQL to connect via socket specify the `unix_socket` parameter instead of `host` and `port`
+
+settings =&gt;
+Array of key/value pairs, on connection it executes SET statements for each pair
+For MySQL : http://dev.mysql.com/doc/refman/5.6/en/set-statement.html
+For Postgres : http://www.postgresql.org/docs/9.2/static/sql-set.html
+For Sql Server : http://msdn.microsoft.com/en-us/library/ms190356.aspx
+
+flags =&gt;
+A key/value array of driver specific connection options.</description>
+  </docblock>
+  <member name="default" type="array" visibility="public" line="67"/>
+  <member name="test" type="array" visibility="public" line="78"/>
+</class>
